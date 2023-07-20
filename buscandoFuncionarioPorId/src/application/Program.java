@@ -69,7 +69,7 @@ public class Program {
 
 		sc.close();
 	}
-
+	// PART 4 - ADD FUNCAO PARA ANALISAR ID
 	public static boolean hasId(List<Employee> list, int id) {
 		Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		return emp != null;
